@@ -1,4 +1,4 @@
-package pl.mt.eitherexception.domainleak.either.controller;
+package pl.mt.eitherexception.either.controller;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pl.mt.eitherexception.domainleak.either.logic.EitherCalculator;
+import pl.mt.eitherexception.either.logic.EitherCalculator;
 
 @RestController
 @RequestMapping("/either-calculator")
@@ -28,8 +28,8 @@ class EitherCalculatorController {
 }
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-record DivideResult(Double result, String error) {
-    public static DivideResult successful(double result) {
+record DivideResult(Integer result, String error) {
+    public static DivideResult successful(int result) {
         return new DivideResult(result, null);
     }
 

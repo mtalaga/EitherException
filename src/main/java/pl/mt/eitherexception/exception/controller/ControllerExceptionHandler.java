@@ -1,4 +1,4 @@
-package pl.mt.eitherexception.domainleak.exception.controller;
+package pl.mt.eitherexception.exception.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

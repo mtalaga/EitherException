@@ -1,4 +1,4 @@
-package pl.mt.eitherexception.domainleak.exception.logic;
+package pl.mt.eitherexception.exception.logic;
 
-public record DivisionResult(double result) {
+public record DivisionResult(int result) {
 }

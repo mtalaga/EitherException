@@ -1,10 +1,10 @@
-package pl.mt.eitherexception.domainleak.exception.controller;
+package pl.mt.eitherexception.exception.controller;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-record DivideResult(Double result, String error) {
-    public static DivideResult successful(double result) {
+record DivideResult(Integer result, String error) {
+    public static DivideResult successful(int result) {
         return new DivideResult(result, null);
     }
 

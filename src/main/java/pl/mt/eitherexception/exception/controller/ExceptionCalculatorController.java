@@ -9,16 +9,17 @@ import pl.mt.eitherexception.exception.logic.ExceptionCalculator;
 
 @RestController
 @RequestMapping("/either-controller")
-class CalculatorController {
+class ExceptionCalculatorController {
 
     private final ExceptionCalculator exceptionCalculator;
 
-    public CalculatorController(ExceptionCalculator exceptionCalculator) {
+    public ExceptionCalculatorController(ExceptionCalculator exceptionCalculator) {
         this.exceptionCalculator = exceptionCalculator;
     }
 
     @GetMapping("/divide")
     public ResponseEntity<DivideResult> divide(@RequestParam int first, @RequestParam int second) {
+        //Can something go wrong, do I know that?
         return ResponseEntity.ok(DivideResult.successful(exceptionCalculator.divide(first, second).result()));
     }
 }

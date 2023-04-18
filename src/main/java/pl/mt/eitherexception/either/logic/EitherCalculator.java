@@ -1,4 +1,4 @@
-package pl.mt.eitherexception.domainleak.either.logic;
+package pl.mt.eitherexception.either.logic;
 
 import io.vavr.control.Either;
 import org.springframework.stereotype.Component;

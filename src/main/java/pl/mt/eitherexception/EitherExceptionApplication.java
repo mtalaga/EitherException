@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EitherexceptionApplication {
+public class EitherExceptionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EitherexceptionApplication.class, args);
+        SpringApplication.run(EitherExceptionApplication.class, args);
     }
 
 }
